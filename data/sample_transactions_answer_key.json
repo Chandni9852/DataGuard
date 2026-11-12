@@ -1,0 +1,1086 @@
+{
+  "seed": 42,
+  "total_records": 1000,
+  "mandatory_columns": [
+    "transaction_id",
+    "customer_id",
+    "transaction_amount",
+    "transaction_date",
+    "merchant",
+    "transaction_status"
+  ],
+  "reference_date": "2026-06-30",
+  "methodology": {
+    "completeness": "non-blank mandatory cells / (records x mandatory columns)",
+    "uniqueness": "records not flagged U01/U02 / total records",
+    "validity": "records with no VALIDITY failure / total records",
+    "consistency": "records with no CONSISTENCY or REFERENTIAL_INTEGRITY failure / total records",
+    "overall": "equal-weighted mean of the four"
+  },
+  "expected_failures_by_rule": {
+    "C01": 3,
+    "C02": 10,
+    "C03": 3,
+    "C04": 3,
+    "C05": 3,
+    "C06": 10,
+    "K01": 5,
+    "K02": 3,
+    "R01": 12,
+    "U01": 13,
+    "U02": 5,
+    "V01": 5,
+    "V02": 15,
+    "V03": 8,
+    "V04": 10
+  },
+  "expected_failures_by_category": {
+    "COMPLETENESS": 32,
+    "CONSISTENCY": 8,
+    "REFERENTIAL_INTEGRITY": 12,
+    "UNIQUENESS": 18,
+    "VALIDITY": 38
+  },
+  "total_failures": 108,
+  "invalid_records": 99,
+  "valid_records": 901,
+  "missing_mandatory_cells": 32,
+  "records_failing_uniqueness": 13,
+  "records_failing_validity": 36,
+  "records_failing_consistency_or_referential": 20,
+  "expected_scores": {
+    "completeness": 99.47,
+    "uniqueness": 98.7,
+    "validity": 96.4,
+    "consistency": 98.0,
+    "overall": 98.14
+  },
+  "rows": [
+    {
+      "row_number": 102,
+      "transaction_id": "T000102",
+      "expected": [
+        {
+          "rule_code": "C06",
+          "column": "merchant"
+        }
+      ]
+    },
+    {
+      "row_number": 103,
+      "transaction_id": "T000103",
+      "expected": [
+        {
+          "rule_code": "C04",
+          "column": "transaction_date"
+        }
+      ]
+    },
+    {
+      "row_number": 119,
+      "transaction_id": "T000119",
+      "expected": [
+        {
+          "rule_code": "V04",
+          "column": "transaction_status"
+        }
+      ]
+    },
+    {
+      "row_number": 125,
+      "transaction_id": "T000125",
+      "expected": [
+        {
+          "rule_code": "C04",
+          "column": "transaction_date"
+        }
+      ]
+    },
+    {
+      "row_number": 127,
+      "transaction_id": "T000071",
+      "expected": [
+        {
+          "rule_code": "U01",
+          "column": "transaction_id"
+        },
+        {
+          "rule_code": "U02",
+          "column": ""
+        }
+      ]
+    },
+    {
+      "row_number": 130,
+      "transaction_id": "T000130",
+      "expected": [
+        {
+          "rule_code": "V02",
+          "column": "transaction_amount"
+        }
+      ]
+    },
+    {
+      "row_number": 155,
+      "transaction_id": "T000155",
+      "expected": [
+        {
+          "rule_code": "V02",
+          "column": "transaction_amount"
+        }
+      ]
+    },
+    {
+      "row_number": 161,
+      "transaction_id": "T000161",
+      "expected": [
+        {
+          "rule_code": "C02",
+          "column": "customer_id"
+        }
+      ]
+    },
+    {
+      "row_number": 166,
+      "transaction_id": "T000166",
+      "expected": [
+        {
+          "rule_code": "K01",
+          "column": "transaction_date"
+        }
+      ]
+    },
+    {
+      "row_number": 172,
+      "transaction_id": "T000172",
+      "expected": [
+        {
+          "rule_code": "C06",
+          "column": "merchant"
+        }
+      ]
+    },
+    {
+      "row_number": 185,
+      "transaction_id": "T000009",
+      "expected": [
+        {
+          "rule_code": "U01",
+          "column": "transaction_id"
+        }
+      ]
+    },
+    {
+      "row_number": 186,
+      "transaction_id": "T000186",
+      "expected": [
+        {
+          "rule_code": "V03",
+          "column": "transaction_date"
+        }
+      ]
+    },
+    {
+      "row_number": 191,
+      "transaction_id": "T000191",
+      "expected": [
+        {
+          "rule_code": "C03",
+          "column": "transaction_amount"
+        }
+      ]
+    },
+    {
+      "row_number": 212,
+      "transaction_id": "T000212",
+      "expected": [
+        {
+          "rule_code": "V02",
+          "column": "transaction_amount"
+        }
+      ]
+    },
+    {
+      "row_number": 228,
+      "transaction_id": "T000228",
+      "expected": [
+        {
+          "rule_code": "C06",
+          "column": "merchant"
+        }
+      ]
+    },
+    {
+      "row_number": 230,
+      "transaction_id": "T000230",
+      "expected": [
+        {
+          "rule_code": "V02",
+          "column": "transaction_amount"
+        }
+      ]
+    },
+    {
+      "row_number": 236,
+      "transaction_id": "T000098",
+      "expected": [
+        {
+          "rule_code": "U01",
+          "column": "transaction_id"
+        }
+      ]
+    },
+    {
+      "row_number": 241,
+      "transaction_id": "T000241",
+      "expected": [
+        {
+          "rule_code": "V01",
+          "column": "transaction_amount"
+        }
+      ]
+    },
+    {
+      "row_number": 251,
+      "transaction_id": "",
+      "expected": [
+        {
+          "rule_code": "C01",
+          "column": "transaction_id"
+        }
+      ]
+    },
+    {
+      "row_number": 252,
+      "transaction_id": "T000252",
+      "expected": [
+        {
+          "rule_code": "V03",
+          "column": "transaction_date"
+        }
+      ]
+    },
+    {
+      "row_number": 261,
+      "transaction_id": "T000261",
+      "expected": [
+        {
+          "rule_code": "C04",
+          "column": "transaction_date"
+        }
+      ]
+    },
+    {
+      "row_number": 274,
+      "transaction_id": "T000039",
+      "expected": [
+        {
+          "rule_code": "U01",
+          "column": "transaction_id"
+        }
+      ]
+    },
+    {
+      "row_number": 289,
+      "transaction_id": "T000289",
+      "expected": [
+        {
+          "rule_code": "C02",
+          "column": "customer_id"
+        }
+      ]
+    },
+    {
+      "row_number": 301,
+      "transaction_id": "T000301",
+      "expected": [
+        {
+          "rule_code": "V02",
+          "column": "transaction_amount"
+        }
+      ]
+    },
+    {
+      "row_number": 325,
+      "transaction_id": "T000325",
+      "expected": [
+        {
+          "rule_code": "K01",
+          "column": "transaction_date"
+        }
+      ]
+    },
+    {
+      "row_number": 352,
+      "transaction_id": "T000352",
+      "expected": [
+        {
+          "rule_code": "R01",
+          "column": "customer_id"
+        }
+      ]
+    },
+    {
+      "row_number": 353,
+      "transaction_id": "T000353",
+      "expected": [
+        {
+          "rule_code": "K02",
+          "column": "transaction_amount"
+        }
+      ]
+    },
+    {
+      "row_number": 364,
+      "transaction_id": "T000364",
+      "expected": [
+        {
+          "rule_code": "K02",
+          "column": "transaction_amount"
+        }
+      ]
+    },
+    {
+      "row_number": 365,
+      "transaction_id": "T000042",
+      "expected": [
+        {
+          "rule_code": "U01",
+          "column": "transaction_id"
+        }
+      ]
+    },
+    {
+      "row_number": 366,
+      "transaction_id": "T000366",
+      "expected": [
+        {
+          "rule_code": "C06",
+          "column": "merchant"
+        }
+      ]
+    },
+    {
+      "row_number": 371,
+      "transaction_id": "T000009",
+      "expected": [
+        {
+          "rule_code": "U01",
+          "column": "transaction_id"
+        },
+        {
+          "rule_code": "U02",
+          "column": ""
+        }
+      ]
+    },
+    {
+      "row_number": 375,
+      "transaction_id": "",
+      "expected": [
+        {
+          "rule_code": "C01",
+          "column": "transaction_id"
+        }
+      ]
+    },
+    {
+      "row_number": 378,
+      "transaction_id": "T000378",
+      "expected": [
+        {
+          "rule_code": "V02",
+          "column": "transaction_amount"
+        }
+      ]
+    },
+    {
+      "row_number": 384,
+      "transaction_id": "T000099",
+      "expected": [
+        {
+          "rule_code": "U01",
+          "column": "transaction_id"
+        }
+      ]
+    },
+    {
+      "row_number": 385,
+      "transaction_id": "T000385",
+      "expected": [
+        {
+          "rule_code": "V02",
+          "column": "transaction_amount"
+        }
+      ]
+    },
+    {
+      "row_number": 386,
+      "transaction_id": "T000386",
+      "expected": [
+        {
+          "rule_code": "V04",
+          "column": "transaction_status"
+        }
+      ]
+    },
+    {
+      "row_number": 415,
+      "transaction_id": "T000415",
+      "expected": [
+        {
+          "rule_code": "R01",
+          "column": "customer_id"
+        }
+      ]
+    },
+    {
+      "row_number": 438,
+      "transaction_id": "T000438",
+      "expected": [
+        {
+          "rule_code": "K01",
+          "column": "transaction_date"
+        }
+      ]
+    },
+    {
+      "row_number": 440,
+      "transaction_id": "T000440",
+      "expected": [
+        {
+          "rule_code": "V04",
+          "column": "transaction_status"
+        }
+      ]
+    },
+    {
+      "row_number": 450,
+      "transaction_id": "T000450",
+      "expected": [
+        {
+          "rule_code": "V03",
+          "column": "transaction_date"
+        }
+      ]
+    },
+    {
+      "row_number": 466,
+      "transaction_id": "T000466",
+      "expected": [
+        {
+          "rule_code": "C06",
+          "column": "merchant"
+        }
+      ]
+    },
+    {
+      "row_number": 468,
+      "transaction_id": "T000468",
+      "expected": [
+        {
+          "rule_code": "C06",
+          "column": "merchant"
+        }
+      ]
+    },
+    {
+      "row_number": 479,
+      "transaction_id": "T000479",
+      "expected": [
+        {
+          "rule_code": "C05",
+          "column": "transaction_status"
+        }
+      ]
+    },
+    {
+      "row_number": 496,
+      "transaction_id": "T000496",
+      "expected": [
+        {
+          "rule_code": "C02",
+          "column": "customer_id"
+        }
+      ]
+    },
+    {
+      "row_number": 517,
+      "transaction_id": "T000517",
+      "expected": [
+        {
+          "rule_code": "V02",
+          "column": "transaction_amount"
+        }
+      ]
+    },
+    {
+      "row_number": 530,
+      "transaction_id": "T000038",
+      "expected": [
+        {
+          "rule_code": "U01",
+          "column": "transaction_id"
+        },
+        {
+          "rule_code": "U02",
+          "column": ""
+        }
+      ]
+    },
+    {
+      "row_number": 536,
+      "transaction_id": "T000536",
+      "expected": [
+        {
+          "rule_code": "K01",
+          "column": "transaction_date"
+        }
+      ]
+    },
+    {
+      "row_number": 537,
+      "transaction_id": "T000537",
+      "expected": [
+        {
+          "rule_code": "C02",
+          "column": "customer_id"
+        }
+      ]
+    },
+    {
+      "row_number": 540,
+      "transaction_id": "T000540",
+      "expected": [
+        {
+          "rule_code": "R01",
+          "column": "customer_id"
+        }
+      ]
+    },
+    {
+      "row_number": 547,
+      "transaction_id": "T000547",
+      "expected": [
+        {
+          "rule_code": "C02",
+          "column": "customer_id"
+        }
+      ]
+    },
+    {
+      "row_number": 555,
+      "transaction_id": "T000555",
+      "expected": [
+        {
+          "rule_code": "C06",
+          "column": "merchant"
+        }
+      ]
+    },
+    {
+      "row_number": 557,
+      "transaction_id": "T000557",
+      "expected": [
+        {
+          "rule_code": "V02",
+          "column": "transaction_amount"
+        }
+      ]
+    },
+    {
+      "row_number": 566,
+      "transaction_id": "T000566",
+      "expected": [
+        {
+          "rule_code": "C06",
+          "column": "merchant"
+        }
+      ]
+    },
+    {
+      "row_number": 590,
+      "transaction_id": "T000590",
+      "expected": [
+        {
+          "rule_code": "R01",
+          "column": "customer_id"
+        }
+      ]
+    },
+    {
+      "row_number": 592,
+      "transaction_id": "T000592",
+      "expected": [
+        {
+          "rule_code": "V04",
+          "column": "transaction_status"
+        }
+      ]
+    },
+    {
+      "row_number": 605,
+      "transaction_id": "T000605",
+      "expected": [
+        {
+          "rule_code": "R01",
+          "column": "customer_id"
+        },
+        {
+          "rule_code": "V02",
+          "column": "transaction_amount"
+        },
+        {
+          "rule_code": "V04",
+          "column": "transaction_status"
+        }
+      ]
+    },
+    {
+      "row_number": 609,
+      "transaction_id": "T000609",
+      "expected": [
+        {
+          "rule_code": "V03",
+          "column": "transaction_date"
+        }
+      ]
+    },
+    {
+      "row_number": 613,
+      "transaction_id": "T000613",
+      "expected": [
+        {
+          "rule_code": "R01",
+          "column": "customer_id"
+        }
+      ]
+    },
+    {
+      "row_number": 614,
+      "transaction_id": "T000614",
+      "expected": [
+        {
+          "rule_code": "C06",
+          "column": "merchant"
+        }
+      ]
+    },
+    {
+      "row_number": 626,
+      "transaction_id": "T000626",
+      "expected": [
+        {
+          "rule_code": "R01",
+          "column": "customer_id"
+        }
+      ]
+    },
+    {
+      "row_number": 629,
+      "transaction_id": "T000629",
+      "expected": [
+        {
+          "rule_code": "V02",
+          "column": "transaction_amount"
+        }
+      ]
+    },
+    {
+      "row_number": 640,
+      "transaction_id": "T000640",
+      "expected": [
+        {
+          "rule_code": "C02",
+          "column": "customer_id"
+        }
+      ]
+    },
+    {
+      "row_number": 646,
+      "transaction_id": "T000646",
+      "expected": [
+        {
+          "rule_code": "R01",
+          "column": "customer_id"
+        },
+        {
+          "rule_code": "V02",
+          "column": "transaction_amount"
+        },
+        {
+          "rule_code": "V04",
+          "column": "transaction_status"
+        }
+      ]
+    },
+    {
+      "row_number": 669,
+      "transaction_id": "T000669",
+      "expected": [
+        {
+          "rule_code": "C03",
+          "column": "transaction_amount"
+        }
+      ]
+    },
+    {
+      "row_number": 674,
+      "transaction_id": "T000674",
+      "expected": [
+        {
+          "rule_code": "C02",
+          "column": "customer_id"
+        }
+      ]
+    },
+    {
+      "row_number": 680,
+      "transaction_id": "T000680",
+      "expected": [
+        {
+          "rule_code": "V01",
+          "column": "transaction_amount"
+        }
+      ]
+    },
+    {
+      "row_number": 683,
+      "transaction_id": "T000683",
+      "expected": [
+        {
+          "rule_code": "C03",
+          "column": "transaction_amount"
+        }
+      ]
+    },
+    {
+      "row_number": 686,
+      "transaction_id": "T000686",
+      "expected": [
+        {
+          "rule_code": "V04",
+          "column": "transaction_status"
+        }
+      ]
+    },
+    {
+      "row_number": 689,
+      "transaction_id": "T000689",
+      "expected": [
+        {
+          "rule_code": "V01",
+          "column": "transaction_amount"
+        }
+      ]
+    },
+    {
+      "row_number": 692,
+      "transaction_id": "T000061",
+      "expected": [
+        {
+          "rule_code": "U01",
+          "column": "transaction_id"
+        },
+        {
+          "rule_code": "U02",
+          "column": ""
+        }
+      ]
+    },
+    {
+      "row_number": 717,
+      "transaction_id": "T000717",
+      "expected": [
+        {
+          "rule_code": "C02",
+          "column": "customer_id"
+        }
+      ]
+    },
+    {
+      "row_number": 724,
+      "transaction_id": "T000724",
+      "expected": [
+        {
+          "rule_code": "V04",
+          "column": "transaction_status"
+        }
+      ]
+    },
+    {
+      "row_number": 726,
+      "transaction_id": "T000726",
+      "expected": [
+        {
+          "rule_code": "V02",
+          "column": "transaction_amount"
+        }
+      ]
+    },
+    {
+      "row_number": 737,
+      "transaction_id": "",
+      "expected": [
+        {
+          "rule_code": "C01",
+          "column": "transaction_id"
+        }
+      ]
+    },
+    {
+      "row_number": 746,
+      "transaction_id": "T000746",
+      "expected": [
+        {
+          "rule_code": "R01",
+          "column": "customer_id"
+        }
+      ]
+    },
+    {
+      "row_number": 751,
+      "transaction_id": "T000049",
+      "expected": [
+        {
+          "rule_code": "U01",
+          "column": "transaction_id"
+        }
+      ]
+    },
+    {
+      "row_number": 760,
+      "transaction_id": "T000760",
+      "expected": [
+        {
+          "rule_code": "C05",
+          "column": "transaction_status"
+        }
+      ]
+    },
+    {
+      "row_number": 772,
+      "transaction_id": "T000772",
+      "expected": [
+        {
+          "rule_code": "V01",
+          "column": "transaction_amount"
+        }
+      ]
+    },
+    {
+      "row_number": 779,
+      "transaction_id": "T000779",
+      "expected": [
+        {
+          "rule_code": "C02",
+          "column": "customer_id"
+        }
+      ]
+    },
+    {
+      "row_number": 784,
+      "transaction_id": "T000784",
+      "expected": [
+        {
+          "rule_code": "R01",
+          "column": "customer_id"
+        }
+      ]
+    },
+    {
+      "row_number": 800,
+      "transaction_id": "T000800",
+      "expected": [
+        {
+          "rule_code": "R01",
+          "column": "customer_id"
+        }
+      ]
+    },
+    {
+      "row_number": 826,
+      "transaction_id": "T000826",
+      "expected": [
+        {
+          "rule_code": "V02",
+          "column": "transaction_amount"
+        }
+      ]
+    },
+    {
+      "row_number": 828,
+      "transaction_id": "T000828",
+      "expected": [
+        {
+          "rule_code": "V03",
+          "column": "transaction_date"
+        }
+      ]
+    },
+    {
+      "row_number": 840,
+      "transaction_id": "T000840",
+      "expected": [
+        {
+          "rule_code": "V01",
+          "column": "transaction_amount"
+        }
+      ]
+    },
+    {
+      "row_number": 853,
+      "transaction_id": "T000018",
+      "expected": [
+        {
+          "rule_code": "U01",
+          "column": "transaction_id"
+        },
+        {
+          "rule_code": "U02",
+          "column": ""
+        }
+      ]
+    },
+    {
+      "row_number": 863,
+      "transaction_id": "T000863",
+      "expected": [
+        {
+          "rule_code": "K02",
+          "column": "transaction_amount"
+        }
+      ]
+    },
+    {
+      "row_number": 876,
+      "transaction_id": "T000876",
+      "expected": [
+        {
+          "rule_code": "C02",
+          "column": "customer_id"
+        }
+      ]
+    },
+    {
+      "row_number": 878,
+      "transaction_id": "T000878",
+      "expected": [
+        {
+          "rule_code": "C05",
+          "column": "transaction_status"
+        }
+      ]
+    },
+    {
+      "row_number": 889,
+      "transaction_id": "T000055",
+      "expected": [
+        {
+          "rule_code": "U01",
+          "column": "transaction_id"
+        }
+      ]
+    },
+    {
+      "row_number": 909,
+      "transaction_id": "T000909",
+      "expected": [
+        {
+          "rule_code": "V03",
+          "column": "transaction_date"
+        }
+      ]
+    },
+    {
+      "row_number": 910,
+      "transaction_id": "T000910",
+      "expected": [
+        {
+          "rule_code": "V04",
+          "column": "transaction_status"
+        }
+      ]
+    },
+    {
+      "row_number": 913,
+      "transaction_id": "T000913",
+      "expected": [
+        {
+          "rule_code": "V02",
+          "column": "transaction_amount"
+        }
+      ]
+    },
+    {
+      "row_number": 914,
+      "transaction_id": "T000914",
+      "expected": [
+        {
+          "rule_code": "K01",
+          "column": "transaction_date"
+        }
+      ]
+    },
+    {
+      "row_number": 938,
+      "transaction_id": "T000048",
+      "expected": [
+        {
+          "rule_code": "U01",
+          "column": "transaction_id"
+        }
+      ]
+    },
+    {
+      "row_number": 948,
+      "transaction_id": "T000948",
+      "expected": [
+        {
+          "rule_code": "V03",
+          "column": "transaction_date"
+        }
+      ]
+    },
+    {
+      "row_number": 949,
+      "transaction_id": "T000949",
+      "expected": [
+        {
+          "rule_code": "R01",
+          "column": "customer_id"
+        }
+      ]
+    },
+    {
+      "row_number": 962,
+      "transaction_id": "T000962",
+      "expected": [
+        {
+          "rule_code": "C06",
+          "column": "merchant"
+        }
+      ]
+    },
+    {
+      "row_number": 989,
+      "transaction_id": "T000989",
+      "expected": [
+        {
+          "rule_code": "V03",
+          "column": "transaction_date"
+        }
+      ]
+    },
+    {
+      "row_number": 994,
+      "transaction_id": "T000994",
+      "expected": [
+        {
+          "rule_code": "V04",
+          "column": "transaction_status"
+        }
+      ]
+    }
+  ]
+}
