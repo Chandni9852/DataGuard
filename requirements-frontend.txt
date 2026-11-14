@@ -1,0 +1,5 @@
+# Streamlit dashboard only (it talks to the API over HTTP; no database driver needed)
+streamlit>=1.50
+plotly>=6.0
+requests>=2.32
+pandas>=2.2
